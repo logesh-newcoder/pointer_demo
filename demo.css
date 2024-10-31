@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Top Navigation */
+.nav-top {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-top h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Sidebar Navigation */
+aside {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left nav ul {
+    list-style-type: none;
+}
+
+.left nav ul li {
+    margin-bottom: 1rem;
+}
+
+.left nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.left nav ul li a:hover {
+    background-color: #4b6cb7;
+    color: white;
+}
+
+/* Main Content */
+.nav-down {
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* Container and Collection */
+.container {
+    width: 80%;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.dresses {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dresses h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4b6cb7;
+    padding-bottom: 0.5rem;
+}
+
+/* Dress Item Styling */
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.dress {
+    background-color: #e0e4e7;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dress:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-down {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+}
