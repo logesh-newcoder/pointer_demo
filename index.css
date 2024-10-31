@@ -59,10 +59,14 @@ body{
     height: 100%; 
     background: linear-gradient(135deg, #4b6cb7, #182848);
     padding: 1rem;
+    position: relative;
+}
+nav{
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;    
-    position: relative;
 }
 .left nav ul {
     list-style: none;
@@ -186,15 +190,13 @@ section{
     .nav-top{
         font-size: 1.6rem;
         padding: 0.6rem;
+        position: relative;
     }
     .nav-down .left{
         padding: 0.7rem;
         display: none;
-    }
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: center;    
+        position: absolute;
+        z-index: 5;
     }
     .left nav ul li {
         margin: 1.5rem 0;
@@ -254,11 +256,8 @@ section{
     .nav-down .left{
         padding: 0.5rem;
         display: none;
-    }
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: center;    
+        position: absolute;
+        z-index: 5;
     }
     .left nav ul li {
         margin: 1rem 0;
